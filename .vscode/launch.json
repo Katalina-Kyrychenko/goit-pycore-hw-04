@@ -1,0 +1,33 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Python: main.py (dot)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/Task #3.py",
+      "args": ["C:\\Users\\KatalinaDev\\Desktop\\Canada\\Ceridian Payslips"],
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}",
+      "justMyCode": true
+    },
+    {
+      "name": "Python: main.py (prompt for path)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/Task #3.py",
+      "args": ["${input:targetPath}"],
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}",
+      "justMyCode": true
+    }
+  ],
+  "inputs": [
+    {
+      "id": "targetPath",
+      "type": "promptString",
+      "description": "Path to directory to show (press Enter for .)",
+      "default": "."
+    }
+  ]
+}
